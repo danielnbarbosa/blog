@@ -1,16 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @post.title %>
+  <div id="post_title"><%= @post.title %></div>
 </p>
 
 <p>
-  <strong>Body:</strong>
-  <%= @post.body %>
+  <div id="post_body"><%= @post.body %></div>
 </p>
 
-<h2>Comments</h2>
+<hr>
+<h3>Comments</h3>
 <div id="comments">
   <%= render :partial => @post.comments.reverse%>
 </div>
