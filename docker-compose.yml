@@ -1,0 +1,7 @@
+blog:
+  build: .
+  command: bundle exec rails server
+  volumes:
+    - $(pwd)/db:/usr/src/app/db
+  ports:
+    - "8080:3000"
